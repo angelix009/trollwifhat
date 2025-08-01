@@ -205,7 +205,7 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
                   activeTab === 'face' ? 'trollfaces' : 
                   activeTab === 'hat' ? 'hats' : 'backgrounds',
                   asset.file
-                )}
+                ) || ''}
                 alt={asset.name}
                 fill
                 className="object-cover"
