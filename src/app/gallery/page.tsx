@@ -93,7 +93,7 @@ export default function GalleryPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
             <div className="relative w-48 h-48 sm:w-56 sm:h-56">
               <Image
-                src={getAssetPath('trollfaces', trollface.file)}
+                src={getAssetPath('trollfaces', trollface.file) || ''}
                 alt={trollface.name}
                 fill
                 className="object-contain"
@@ -102,7 +102,7 @@ export default function GalleryPage() {
               {/* Hat overlay */}
               {hat && hat.file && (
                 <Image
-                  src={getAssetPath('hats', hat.file)}
+                  src={getAssetPath('hats', hat.file) || ''}
                   alt={hat.name}
                   fill
                   className="object-contain"
@@ -160,7 +160,7 @@ export default function GalleryPage() {
                 <div key={face.id} className="aspect-square border-2 border-gray-200 hover:border-black transition-colors group">
                   <div className="relative w-full h-full">
                     <Image
-                      src={getAssetPath('trollfaces', face.file)}
+                      src={getAssetPath('trollfaces', face.file) || ''}
                       alt={face.name}
                       fill
                       className="object-cover"
