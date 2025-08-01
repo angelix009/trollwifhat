@@ -78,7 +78,7 @@ export default function AboutPage() {
                 <h3 className="text-lg font-bold text-black mb-3">🆓 Completely Free</h3>
                 <p className="text-gray-700">
                   Create unlimited troll faces, download high-quality images, and troll 
-                  to your heart's content. No subscriptions, no watermarks.
+                  to your heart&apos;s content. No subscriptions, no watermarks.
                 </p>
               </div>
             </div>
