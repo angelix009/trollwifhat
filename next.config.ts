@@ -3,12 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   devIndicators: {
-    buildActivity: false,
-    buildActivityPosition: 'bottom-right',
+    position: 'bottom-right',
   },
-  // Disable the dev overlay completely
+  // Remove console logs in production
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
+  },
+  // Optimize images
+  images: {
+    unoptimized: true,
   },
 };
 
