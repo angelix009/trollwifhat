@@ -9,7 +9,7 @@ const defaultCharacter: TrollCharacter = {
   id: 'creator-' + Date.now(),
   name: 'My Troll',
   face: {
-    expression: 'black',
+    expression: 'classic',
     skinColor: 'black',
     eyeStyle: 'normal',
     eyeColor: '#000000',
