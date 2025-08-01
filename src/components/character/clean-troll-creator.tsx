@@ -79,7 +79,7 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
         await new Promise((resolve, reject) => {
           bgImg.onload = resolve;
           bgImg.onerror = reject;
-          bgImg.src = getAssetPath('backgrounds', currentBackground.file);
+          bgImg.src = getAssetPath('backgrounds', currentBackground.file) || '';
         });
         
         ctx.drawImage(bgImg, 0, 0, 512, 512);
@@ -95,7 +95,7 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
       await new Promise((resolve, reject) => {
         trollImg.onload = resolve;
         trollImg.onerror = reject;
-        trollImg.src = getAssetPath('trollfaces', currentTrollFace.file);
+        trollImg.src = getAssetPath('trollfaces', currentTrollFace.file) || '';
       });
       
       const trollSize = 460;
@@ -111,7 +111,7 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
         await new Promise((resolve, reject) => {
           hatImg.onload = resolve;
           hatImg.onerror = reject;
-          hatImg.src = getAssetPath('hats', currentHat.file);
+          hatImg.src = getAssetPath('hats', currentHat.file) || '';
         });
         
         ctx.drawImage(hatImg, trollX, trollY, trollSize, trollSize);
@@ -160,7 +160,7 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
           <div className="relative w-72 h-72">
             <Image
-              src={getAssetPath('trollfaces', currentTrollFace.file)}
+              src={getAssetPath('trollfaces', currentTrollFace.file) || ''}
               alt={currentTrollFace.name}
               fill
               className="object-contain z-10"
@@ -171,7 +171,7 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
             {currentHat && currentHat.file && (
               <div className="absolute inset-0 z-20">
                 <Image
-                  src={getAssetPath('hats', currentHat.file)}
+                  src={getAssetPath('hats', currentHat.file) || ''}
                   alt={currentHat.name}
                   fill
                   className="object-contain"
