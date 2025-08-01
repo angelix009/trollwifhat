@@ -32,7 +32,7 @@ const TokenPrice: React.FC<TokenPriceProps> = ({ contractAddress, className = ""
         
         if (data.pairs && data.pairs.length > 0) {
           // Get the most liquid pair (highest volume)
-          const mainPair = data.pairs.reduce((prev: any, current: any) => 
+          const mainPair = data.pairs.reduce((prev: { volume?: { h24?: number }; marketCap?: string; priceUsd?: string }, current: { volume?: { h24?: number }; marketCap?: string; priceUsd?: string }) => 
             (current.volume?.h24 || 0) > (prev.volume?.h24 || 0) ? current : prev
           );
           

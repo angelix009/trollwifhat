@@ -35,13 +35,13 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-black mb-4">Our Mission</h2>
             <p className="text-gray-700 mb-4">
               TrollWifHat was born from a simple idea: what if we could give the classic troll face 
-              the customization it deserves? We've assembled the most comprehensive collection of 
+              the customization it deserves? We&apos;ve assembled the most comprehensive collection of 
               troll faces, accessories, and backgrounds to let you create the perfect embodiment 
               of your trolling spirit.
             </p>
             <p className="text-gray-700 mb-6">
-              Whether you're a crypto degen, a gaming veteran, or just someone who appreciates 
-              good old-fashioned internet humor, we've got the tools to help you express yourself 
+              Whether you&apos;re a crypto degen, a gaming veteran, or just someone who appreciates 
+              good old-fashioned internet humor, we&apos;ve got the tools to help you express yourself 
               through the timeless art of the troll face.
             </p>
           </section>
@@ -117,7 +117,7 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-700">
               We believe in keeping the internet weird, wonderful, and full of harmless mischief. 
-              The troll face represents the playful spirit of the early internet, and we're here 
+              The troll face represents the playful spirit of the early internet, and we&apos;re here 
               to make sure it lives on for future generations of trolls.
             </p>
           </section>
@@ -153,7 +153,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-black mb-2">How do I request new features?</h3>
                 <p className="text-gray-700">
-                  We love feedback! While we don't have a formal system yet, the best trolls 
+                  We love feedback! While we don&apos;t have a formal system yet, the best trolls 
                   always find a way to make their voices heard. Keep an eye out for future 
                   community features.
                 </p>

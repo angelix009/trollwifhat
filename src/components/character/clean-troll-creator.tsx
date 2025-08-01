@@ -4,7 +4,7 @@ import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { ASSETS, getAssetPath } from '@/lib/assets';
 import { TrollCharacter } from '@/types/character';
-import { exportCharacterAsImage, downloadImage, generateFilename } from '@/lib/export-utils';
+import { downloadImage, generateFilename } from '@/lib/export-utils';
 
 interface CleanTrollCreatorProps {
   character: TrollCharacter;

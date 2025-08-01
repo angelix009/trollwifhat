@@ -152,7 +152,7 @@ export default function HomePage() {
               <h3 className="text-meme-md text-black mb-4 text-center">AUTHENTIC TROLLS</h3>
               <p className="text-gray-600 text-center leading-relaxed mb-6">
                 Choose from <strong>14+ genuine troll faces</strong> in multiple colors and styles. 
-                From classic black & white to rainbow variants that'll make your enemies seethe.
+                From classic black & white to rainbow variants that&apos;ll make your enemies seethe.
               </p>
               
               <div className="flex justify-center">
