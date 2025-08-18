@@ -41,8 +41,8 @@ const ImageModal: React.FC<{ creation: Creation; onClose: () => void }> = ({ cre
               className="absolute inset-0 w-full h-full object-cover"
             />
             
-            {/* Troll Face positioned at bottom */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[55%] h-[55%]">
+            {/* Troll Face positioned at bottom - larger size to match cards */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[70%] h-[70%]">
               <img 
                 src={creation.trollface} 
                 alt="Troll Face" 
