@@ -43,12 +43,20 @@ const Footer: React.FC = () => {
                 📊 DexScreener
               </a>
               <a 
-                href="https://twitter.com/trollwifhat" 
+                href="https://twitter.com/trollwifhats" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors flex items-center gap-2 text-sm"
               >
                 🐦 Twitter
+              </a>
+              <a 
+                href="https://t.me/trollwifhats" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-blue-400 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-500 transition-colors flex items-center gap-2 text-sm"
+              >
+                💬 Telegram
               </a>
             </div>
           </div>
