@@ -39,7 +39,10 @@ const TokenPrice: React.FC<TokenPriceProps> = ({ contractAddress, className = ""
           setMarketCap(parseFloat(mainPair.marketCap || '0'));
           setChange24h(parseFloat(mainPair.priceChange?.h24 || '0'));
         } else {
-          throw new Error('No trading pairs found');
+          // No trading pairs found - set default values instead of throwing error
+          console.log('No trading pairs found for token:', contractAddress);
+          setMarketCap(null);
+          setChange24h(null);
         }
       } catch (err) {
         console.error('Failed to fetch token price:', err);
