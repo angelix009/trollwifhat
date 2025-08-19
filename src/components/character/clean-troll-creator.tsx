@@ -114,7 +114,12 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
           hatImg.src = getAssetPath('hats', currentHat.file) || '';
         });
         
-        ctx.drawImage(hatImg, trollX, trollY, trollSize, trollSize);
+        // Adjust position for new hats
+        const needsExtraAdjustment = ['chef', 'indian', 'morocco'].includes(currentHat.id);
+        const isNewHat = ['berret', 'bob', 'captain', 'chef', 'chill', 'christmas', 'circus', 'cowboy', 'goofy', 'indian', 'lucky', 'magician', 'morocco', 'wizzard'].includes(currentHat.id);
+        const hatY = needsExtraAdjustment ? trollY - 60 : isNewHat ? trollY - 50 : trollY; // Chef, Indian, and Morocco hats extra adjustment
+        
+        ctx.drawImage(hatImg, trollX, hatY, trollSize, trollSize);
       }
       
       // Convert to data URL and download
@@ -169,7 +174,13 @@ const CleanTrollCreator: React.FC<CleanTrollCreatorProps> = ({ character, onUpda
             
             {/* Hat overlay - sized relative to troll face */}
             {currentHat && currentHat.file && (
-              <div className="absolute inset-0 z-20">
+              <div className={`absolute z-20 ${
+                ['chef', 'indian', 'morocco'].includes(currentHat.id)
+                  ? 'inset-0 -top-12'  // Chef, Indian, and Morocco hats need extra adjustment
+                  : ['berret', 'bob', 'captain', 'chill', 'christmas', 'circus', 'cowboy', 'goofy', 'lucky', 'magician', 'wizzard'].includes(currentHat.id)
+                  ? 'inset-0 -top-10'  // Move new hats up but not too much
+                  : 'inset-0'         // Keep old hats in original position
+              }`}>
                 <Image
                   src={getAssetPath('hats', currentHat.file) || ''}
                   alt={currentHat.name}

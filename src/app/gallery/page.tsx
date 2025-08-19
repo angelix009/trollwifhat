@@ -101,12 +101,20 @@ export default function GalleryPage() {
               
               {/* Hat overlay */}
               {hat && hat.file && (
-                <Image
-                  src={getAssetPath('hats', hat.file) || ''}
-                  alt={hat.name}
-                  fill
-                  className="object-contain"
-                />
+                <div className={`absolute ${
+                  ['chef', 'indian', 'morocco'].includes(hat.id)
+                    ? 'inset-0 -top-6'  // Chef, Indian, and Morocco hats need extra adjustment
+                    : ['berret', 'bob', 'captain', 'chill', 'christmas', 'circus', 'cowboy', 'goofy', 'lucky', 'magician', 'wizzard'].includes(hat.id)
+                    ? 'inset-0 -top-5'  // Move new hats up but not too much
+                    : 'inset-0'         // Keep old hats in original position
+                }`}>
+                  <Image
+                    src={getAssetPath('hats', hat.file) || ''}
+                    alt={hat.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               )}
             </div>
           </div>
