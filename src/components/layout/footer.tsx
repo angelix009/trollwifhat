@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 text-gray-300">
                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                19+ Hats & Accessories
+                34+ Hats & Accessories
               </div>
               <div className="flex items-center gap-2 text-gray-300">
                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>

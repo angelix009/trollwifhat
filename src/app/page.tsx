@@ -31,7 +31,7 @@ export default function HomePage() {
                       "Create Epic PFPs 🎨",
                       "Authentic Troll Vibes 😏", 
                       "40+ Legendary Backgrounds 🖼️",
-                      "19+ Drip Accessories 👑",
+                      "34+ Drip Accessories 👑",
                       "Export Ready Images 📸",
                       "Web3 Meme Culture 🚀"
                     ]}
@@ -55,7 +55,7 @@ export default function HomePage() {
                   <div className="text-xs md:text-sm text-gray-600">Troll Faces</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl md:text-meme-md text-black font-meme">19+</div>
+                  <div className="text-xl md:text-meme-md text-black font-meme">34+</div>
                   <div className="text-xs md:text-sm text-gray-600">Hats & Gear</div>
                 </div>
                 <div className="text-center">
@@ -205,7 +205,7 @@ export default function HomePage() {
               
               <h3 className="text-meme-md text-black mb-4 text-center">DRIP COLLECTION</h3>
               <p className="text-gray-600 text-center leading-relaxed mb-6">
-                <strong>19+ hats & accessories</strong> from crowns to beanies, durags to nerd glasses. 
+                <strong>34+ hats & accessories</strong> from crowns to beanies, durags to nerd glasses. 
                 Express your unique troll personality and flex on the haters.
               </p>
               
@@ -342,7 +342,7 @@ export default function HomePage() {
               <div className="text-sm text-gray-600">Authentic variants</div>
             </div>
             <div className="group">
-              <div className="text-5xl font-meme text-black mb-4 group-hover:scale-110 transition-transform">19+</div>
+              <div className="text-5xl font-meme text-black mb-4 group-hover:scale-110 transition-transform">34+</div>
               <div className="text-lg font-medium text-gray-800 mb-2">Accessories</div>
               <div className="text-sm text-gray-600">Epic drip collection</div>
             </div>

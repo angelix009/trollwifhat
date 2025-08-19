@@ -93,7 +93,7 @@ export default function AboutPage() {
                 <div className="text-gray-300">Troll Face Variants</div>
               </div>
               <div>
-                <div className="text-3xl font-bold mb-2">19+</div>
+                <div className="text-3xl font-bold mb-2">34+</div>
                 <div className="text-gray-300">Hats & Accessories</div>
               </div>
               <div>
