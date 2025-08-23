@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             {/* Social Links */}
             <div className="flex gap-4">
               <a 
-                href="https://dexscreener.com/solana/JD3bXw4rmg9mfnYasVGofevPPhKxa7tikQ61EoGcTRoL" 
+                href="https://dexscreener.com/solana/jFm77hFoxhKacdtjRxg533gupJxAJ4xqffjtzbyTRoL" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-[#0B0E11] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#1a1d21] transition-colors flex items-center gap-2 text-sm border border-gray-700"

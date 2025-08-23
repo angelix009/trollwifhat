@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             {/* Token Price */}
             <div className="border-l-2 border-gray-200 pl-6">
               <TokenPrice 
-                contractAddress="JD3bXw4rmg9mfnYasVGofevPPhKxa7tikQ61EoGcTRoL"
+                contractAddress="jFm77hFoxhKacdtjRxg533gupJxAJ4xqffjtzbyTRoL"
                 className="text-sm"
               />
             </div>
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
             {/* Token Price on Mobile */}
             <div className="px-3 py-2 border-b border-gray-100">
               <TokenPrice 
-                contractAddress="JD3bXw4rmg9mfnYasVGofevPPhKxa7tikQ61EoGcTRoL"
+                contractAddress="jFm77hFoxhKacdtjRxg533gupJxAJ4xqffjtzbyTRoL"
                 className="text-sm justify-center"
               />
             </div>
